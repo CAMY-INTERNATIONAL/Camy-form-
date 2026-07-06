@@ -1,6 +1,6 @@
 # CAMY — Diagnóstico de Bem-Estar
 
-Formulário de avaliação de saúde mental para a Better Care Moçambique.
+Formulário de avaliação de saúde mental para a bettercare Moçambique.
 
 ## Configuração antes de publicar
 
