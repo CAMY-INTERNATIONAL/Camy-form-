@@ -462,14 +462,12 @@ export default function App() {
         ...A,
         s7_1: Array.isArray(A.s7_1) ? A.s7_1.join(" ") : (A.s7_1||""),
       };
-      const res = await fetch(SHEETS_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-        mode: "no-cors",
-      });
+      const res =await fetch(SHEETS_URL, {
+  method: "POST",
+  headers: { "Content-Type": "text/plain;charset=utf-8" },
+  body: JSON.stringify(payload),
+  redirect: "follow",
+});
       setStatus("success");
       window.scrollTo(0,0);
     } catch(e) {
